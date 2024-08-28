@@ -23,6 +23,7 @@ export const Calculator = () => {
       <div className="flex flex-col centered w-[80vw]">
         <label className="text-xl text-zinc-500">Valor a converter</label>
         <input
+          inputMode="numeric"
           type="number"
           onChange={(e) => setValueBase(Number(e.target.value))}
           className="border border-gray-300 rounded-md p-2 w-full"
@@ -30,7 +31,7 @@ export const Calculator = () => {
       </div>
 
       <div className="flex flex-col centered w-[80vw]">
-        <label className="text-xl text-zinc-500">Valor a converter</label>
+        <label className="text-xl text-zinc-500">Moeda</label>
         <select
           onChange={handleSetCurrency}
           className="border border-gray-300 rounded-md p-2 w-full"
